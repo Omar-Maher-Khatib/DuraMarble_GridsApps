@@ -5,22 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DuraMarble - Premium Marble & Stone</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: "#DCD7C9",
+              tan: "#A27B5C",
+              sage: "#3F4F44",
+              forest: "#2C3930",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="bg-gray-50">
+  <body class="bg-cream">
     <!-- Navigation -->
-    <nav class="bg-white shadow-md">
+    <nav class="bg-white shadow-md" style="background-color: #dcd7c9">
       <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
-          <h1 class="text-2xl font-bold text-gray-800">DuraMarble</h1>
+          <h1 class="text-2xl font-bold" style="color: #2c3930">DuraMarble</h1>
           <div class="hidden md:flex space-x-6">
-            <a href="index.html" class="text-gray-900 font-semibold">Home</a>
-            <a href="about.html" class="text-gray-600 hover:text-gray-900"
+            <a href="index.html" class="font-semibold" style="color: #2c3930"
+              >Home</a
+            >
+            <a href="about.html" class="hover:opacity-80" style="color: #3f4f44"
               >About</a
             >
-            <a href="services.html" class="text-gray-600 hover:text-gray-900"
+            <a
+              href="services.html"
+              class="hover:opacity-80"
+              style="color: #3f4f44"
               >Services</a
             >
-            <a href="blog.html" class="text-gray-600 hover:text-gray-900"
+            <a href="blog.html" class="hover:opacity-80" style="color: #3f4f44"
               >Blog</a
             >
           </div>
@@ -31,7 +50,8 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="bg-gradient-to-r from-gray-800 to-gray-600 text-white py-20"
+      class="text-white py-20"
+      style="background: linear-gradient(to right, #2c3930, #3f4f44)"
     >
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-4xl md:text-5xl font-bold mb-4">
@@ -40,7 +60,8 @@
         <p class="text-xl mb-8">Elevate your space with timeless elegance</p>
         <a
           href="#products"
-          class="bg-white text-gray-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+          class="px-8 py-3 rounded-lg font-semibold transition hover:opacity-90"
+          style="background-color: #a27b5c; color: white"
           >Explore Products</a
         >
       </div>
@@ -49,7 +70,7 @@
     <!-- Products Grid -->
     <section id="products" class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-12" style="color: #2c3930">
           Our Marble Collection
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -61,13 +82,13 @@
               <span class="text-gray-600 text-lg">White Marble</span>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2 text-gray-800">
+              <h3 class="text-xl font-bold mb-2" style="color: #2c3930">
                 Carrara White
               </h3>
-              <p class="text-gray-600 mb-4">
+              <p class="mb-4" style="color: #3f4f44">
                 Classic Italian marble with subtle gray veining
               </p>
-              <p class="text-2xl font-bold text-gray-800">$85/sq ft</p>
+              <p class="text-2xl font-bold" style="color: #a27b5c">$85/sq ft</p>
             </div>
           </div>
 
@@ -79,13 +100,13 @@
               <span class="text-white text-lg">Black Marble</span>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2 text-gray-800">
+              <h3 class="text-xl font-bold mb-2" style="color: #2c3930">
                 Nero Marquina
               </h3>
-              <p class="text-gray-600 mb-4">
+              <p class="mb-4" style="color: #3f4f44">
                 Deep black marble with white veining
               </p>
-              <p class="text-2xl font-bold text-gray-800">$95/sq ft</p>
+              <p class="text-2xl font-bold" style="color: #a27b5c">$95/sq ft</p>
             </div>
           </div>
 
@@ -97,11 +118,13 @@
               <span class="text-amber-800 text-lg">Beige Marble</span>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2 text-gray-800">Crema Marfil</h3>
-              <p class="text-gray-600 mb-4">
+              <h3 class="text-xl font-bold mb-2" style="color: #2c3930">
+                Crema Marfil
+              </h3>
+              <p class="mb-4" style="color: #3f4f44">
                 Warm beige marble with cream tones
               </p>
-              <p class="text-2xl font-bold text-gray-800">$75/sq ft</p>
+              <p class="text-2xl font-bold" style="color: #a27b5c">$75/sq ft</p>
             </div>
           </div>
 
@@ -113,13 +136,15 @@
               <span class="text-green-800 text-lg">Green Marble</span>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2 text-gray-800">
+              <h3 class="text-xl font-bold mb-2" style="color: #2c3930">
                 Verde Guatemala
               </h3>
-              <p class="text-gray-600 mb-4">
+              <p class="mb-4" style="color: #3f4f44">
                 Rich green marble with natural patterns
               </p>
-              <p class="text-2xl font-bold text-gray-800">$105/sq ft</p>
+              <p class="text-2xl font-bold" style="color: #a27b5c">
+                $105/sq ft
+              </p>
             </div>
           </div>
 
@@ -131,13 +156,15 @@
               <span class="text-red-800 text-lg">Red Marble</span>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2 text-gray-800">
+              <h3 class="text-xl font-bold mb-2" style="color: #2c3930">
                 Rojo Alicante
               </h3>
-              <p class="text-gray-600 mb-4">
+              <p class="mb-4" style="color: #3f4f44">
                 Striking red marble with white fossils
               </p>
-              <p class="text-2xl font-bold text-gray-800">$120/sq ft</p>
+              <p class="text-2xl font-bold" style="color: #a27b5c">
+                $120/sq ft
+              </p>
             </div>
           </div>
 
@@ -149,11 +176,13 @@
               <span class="text-blue-800 text-lg">Gray Marble</span>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2 text-gray-800">Bardiglio</h3>
-              <p class="text-gray-600 mb-4">
+              <h3 class="text-xl font-bold mb-2" style="color: #2c3930">
+                Bardiglio
+              </h3>
+              <p class="mb-4" style="color: #3f4f44">
                 Elegant gray marble with soft veining
               </p>
-              <p class="text-2xl font-bold text-gray-800">$90/sq ft</p>
+              <p class="text-2xl font-bold" style="color: #a27b5c">$90/sq ft</p>
             </div>
           </div>
         </div>
@@ -161,18 +190,19 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="bg-white py-16">
+    <section id="services" class="py-16" style="background-color: #dcd7c9">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-12" style="color: #2c3930">
           Our Services
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="text-center p-6">
             <div
-              class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              style="background-color: #a27b5c"
             >
               <svg
-                class="w-8 h-8 text-gray-600"
+                class="w-8 h-8 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -185,18 +215,21 @@
                 ></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-2 text-gray-800">Custom Design</h3>
-            <p class="text-gray-600">
+            <h3 class="text-xl font-bold mb-2" style="color: #2c3930">
+              Custom Design
+            </h3>
+            <p style="color: #3f4f44">
               Personalized marble solutions for your unique space
             </p>
           </div>
 
           <div class="text-center p-6">
             <div
-              class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              style="background-color: #a27b5c"
             >
               <svg
-                class="w-8 h-8 text-gray-600"
+                class="w-8 h-8 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -209,20 +242,21 @@
                 ></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-2 text-gray-800">
+            <h3 class="text-xl font-bold mb-2" style="color: #2c3930">
               Quality Assured
             </h3>
-            <p class="text-gray-600">
+            <p style="color: #3f4f44">
               Premium grade marble with guaranteed authenticity
             </p>
           </div>
 
           <div class="text-center p-6">
             <div
-              class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              style="background-color: #a27b5c"
             >
               <svg
-                class="w-8 h-8 text-gray-600"
+                class="w-8 h-8 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -235,8 +269,10 @@
                 ></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-2 text-gray-800">Installation</h3>
-            <p class="text-gray-600">
+            <h3 class="text-xl font-bold mb-2" style="color: #2c3930">
+              Installation
+            </h3>
+            <p style="color: #3f4f44">
               Professional installation by experienced craftsmen
             </p>
           </div>
@@ -245,40 +281,53 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-100 py-16">
+    <section id="contact" class="py-16" style="background-color: white">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-12" style="color: #2c3930">
           Contact Us
         </h2>
         <div class="max-w-2xl mx-auto">
-          <form class="bg-white rounded-lg shadow-lg p-8">
+          <form
+            class="rounded-lg shadow-lg p-8"
+            style="background-color: #dcd7c9"
+          >
             <div class="mb-4">
-              <label class="block text-gray-700 font-bold mb-2">Name</label>
+              <label class="block font-bold mb-2" style="color: #2c3930"
+                >Name</label
+              >
               <input
                 type="text"
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none"
+                style="border-color: #a27b5c"
                 placeholder="Your name"
               />
             </div>
             <div class="mb-4">
-              <label class="block text-gray-700 font-bold mb-2">Email</label>
+              <label class="block font-bold mb-2" style="color: #2c3930"
+                >Email</label
+              >
               <input
                 type="email"
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none"
+                style="border-color: #a27b5c"
                 placeholder="your@email.com"
               />
             </div>
             <div class="mb-4">
-              <label class="block text-gray-700 font-bold mb-2">Message</label>
+              <label class="block font-bold mb-2" style="color: #2c3930"
+                >Message</label
+              >
               <textarea
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none"
+                style="border-color: #a27b5c"
                 rows="4"
                 placeholder="Tell us about your project"
               ></textarea>
             </div>
             <button
               type="submit"
-              class="w-full bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition"
+              class="w-full text-white py-3 rounded-lg font-semibold transition hover:opacity-90"
+              style="background-color: #3f4f44"
             >
               Send Message
             </button>
@@ -288,7 +337,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="text-white py-8" style="background-color: #2c3930">
       <div class="container mx-auto px-4 text-center">
         <p>&copy; 2026 DuraMarble. All rights reserved.</p>
         <p class="text-gray-400 mt-2">Premium Marble & Stone Solutions</p>

@@ -5,22 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - DuraMarble</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: "#DCD7C9",
+              tan: "#A27B5C",
+              sage: "#3F4F44",
+              forest: "#2C3930",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="bg-gray-50">
+  <body class="bg-cream" style="background-color: #dcd7c9">
     <!-- Navigation -->
-    <nav class="bg-white shadow-md">
+    <nav class="shadow-md" style="background-color: #dcd7c9">
       <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
-          <h1 class="text-2xl font-bold text-gray-800">DuraMarble</h1>
+          <h1 class="text-2xl font-bold" style="color: #2c3930">DuraMarble</h1>
           <div class="hidden md:flex space-x-6">
-            <a href="index.html" class="text-gray-600 hover:text-gray-900"
+            <a href="index.html" class="hover:opacity-80" style="color: #3f4f44"
               >Home</a
             >
-            <a href="about.html" class="text-gray-900 font-semibold">About</a>
-            <a href="services.html" class="text-gray-600 hover:text-gray-900"
+            <a href="about.html" class="font-semibold" style="color: #2c3930"
+              >About</a
+            >
+            <a
+              href="services.html"
+              class="hover:opacity-80"
+              style="color: #3f4f44"
               >Services</a
             >
-            <a href="blog.html" class="text-gray-600 hover:text-gray-900"
+            <a href="blog.html" class="hover:opacity-80" style="color: #3f4f44"
               >Blog</a
             >
           </div>
@@ -30,7 +49,8 @@
 
     <!-- Hero Section -->
     <section
-      class="bg-gradient-to-r from-gray-800 to-gray-600 text-white py-16"
+      class="text-white py-16"
+      style="background: linear-gradient(to right, #2c3930, #3f4f44)"
     >
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-4xl font-bold mb-4">About DuraMarble</h2>
@@ -43,14 +63,16 @@
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <div class="mb-12">
-            <h3 class="text-3xl font-bold mb-6 text-gray-800">Our Story</h3>
-            <p class="text-gray-600 mb-4 leading-relaxed">
+            <h3 class="text-3xl font-bold mb-6" style="color: #2c3930">
+              Our Story
+            </h3>
+            <p class="mb-4 leading-relaxed" style="color: #3f4f44">
               DuraMarble has been a leading provider of premium marble and stone
               solutions for over three decades. Founded in 1995, we began as a
               small family business with a passion for bringing the finest
               natural stone to homes and businesses.
             </p>
-            <p class="text-gray-600 mb-4 leading-relaxed">
+            <p class="mb-4 leading-relaxed" style="color: #3f4f44">
               Today, we've grown into a trusted name in the industry, serving
               thousands of satisfied customers across the country. Our
               commitment to quality, craftsmanship, and customer satisfaction
@@ -59,8 +81,10 @@
           </div>
 
           <div class="mb-12">
-            <h3 class="text-3xl font-bold mb-6 text-gray-800">Our Mission</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <h3 class="text-3xl font-bold mb-6" style="color: #2c3930">
+              Our Mission
+            </h3>
+            <p class="leading-relaxed" style="color: #3f4f44">
               To provide exceptional marble and stone products that transform
               spaces into timeless works of art, while delivering unparalleled
               customer service and sustainable practices.
@@ -68,40 +92,54 @@
           </div>
 
           <div class="mb-12">
-            <h3 class="text-3xl font-bold mb-6 text-gray-800">Why Choose Us</h3>
+            <h3 class="text-3xl font-bold mb-6" style="color: #2c3930">
+              Why Choose Us
+            </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div class="bg-white p-6 rounded-lg shadow-md">
-                <h4 class="text-xl font-bold mb-3 text-gray-800">
+              <div
+                class="p-6 rounded-lg shadow-md"
+                style="background-color: white"
+              >
+                <h4 class="text-xl font-bold mb-3" style="color: #2c3930">
                   Premium Quality
                 </h4>
-                <p class="text-gray-600">
+                <p style="color: #3f4f44">
                   We source only the finest marble from trusted quarries
                   worldwide.
                 </p>
               </div>
-              <div class="bg-white p-6 rounded-lg shadow-md">
-                <h4 class="text-xl font-bold mb-3 text-gray-800">
+              <div
+                class="p-6 rounded-lg shadow-md"
+                style="background-color: white"
+              >
+                <h4 class="text-xl font-bold mb-3" style="color: #2c3930">
                   Expert Team
                 </h4>
-                <p class="text-gray-600">
+                <p style="color: #3f4f44">
                   Our craftsmen have decades of combined experience in stone
                   work.
                 </p>
               </div>
-              <div class="bg-white p-6 rounded-lg shadow-md">
-                <h4 class="text-xl font-bold mb-3 text-gray-800">
+              <div
+                class="p-6 rounded-lg shadow-md"
+                style="background-color: white"
+              >
+                <h4 class="text-xl font-bold mb-3" style="color: #2c3930">
                   Customer Focus
                 </h4>
-                <p class="text-gray-600">
+                <p style="color: #3f4f44">
                   Your satisfaction is our top priority, from selection to
                   installation.
                 </p>
               </div>
-              <div class="bg-white p-6 rounded-lg shadow-md">
-                <h4 class="text-xl font-bold mb-3 text-gray-800">
+              <div
+                class="p-6 rounded-lg shadow-md"
+                style="background-color: white"
+              >
+                <h4 class="text-xl font-bold mb-3" style="color: #2c3930">
                   Sustainability
                 </h4>
-                <p class="text-gray-600">
+                <p style="color: #3f4f44">
                   We're committed to environmentally responsible sourcing and
                   practices.
                 </p>
@@ -113,33 +151,48 @@
     </section>
 
     <!-- Team Section -->
-    <section class="bg-white py-16">
+    <section class="py-16" style="background-color: white">
       <div class="container mx-auto px-4">
-        <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">
+        <h3 class="text-3xl font-bold text-center mb-12" style="color: #2c3930">
           Our Team
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div class="text-center">
-            <div class="bg-gray-300 w-32 h-32 rounded-full mx-auto mb-4"></div>
-            <h4 class="text-xl font-bold text-gray-800">John Anderson</h4>
-            <p class="text-gray-600">Founder & CEO</p>
+            <div
+              class="w-32 h-32 rounded-full mx-auto mb-4"
+              style="background-color: #a27b5c"
+            ></div>
+            <h4 class="text-xl font-bold" style="color: #2c3930">
+              John Anderson
+            </h4>
+            <p style="color: #3f4f44">Founder & CEO</p>
           </div>
           <div class="text-center">
-            <div class="bg-gray-300 w-32 h-32 rounded-full mx-auto mb-4"></div>
-            <h4 class="text-xl font-bold text-gray-800">Sarah Mitchell</h4>
-            <p class="text-gray-600">Design Director</p>
+            <div
+              class="w-32 h-32 rounded-full mx-auto mb-4"
+              style="background-color: #a27b5c"
+            ></div>
+            <h4 class="text-xl font-bold" style="color: #2c3930">
+              Sarah Mitchell
+            </h4>
+            <p style="color: #3f4f44">Design Director</p>
           </div>
           <div class="text-center">
-            <div class="bg-gray-300 w-32 h-32 rounded-full mx-auto mb-4"></div>
-            <h4 class="text-xl font-bold text-gray-800">Michael Chen</h4>
-            <p class="text-gray-600">Operations Manager</p>
+            <div
+              class="w-32 h-32 rounded-full mx-auto mb-4"
+              style="background-color: #a27b5c"
+            ></div>
+            <h4 class="text-xl font-bold" style="color: #2c3930">
+              Michael Chen
+            </h4>
+            <p style="color: #3f4f44">Operations Manager</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="text-white py-8" style="background-color: #2c3930">
       <div class="container mx-auto px-4 text-center">
         <p>&copy; 2026 DuraMarble. All rights reserved.</p>
         <p class="text-gray-400 mt-2">Premium Marble & Stone Solutions</p>
